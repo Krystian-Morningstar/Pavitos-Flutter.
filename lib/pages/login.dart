@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 // import 'home.dart';
-// import 'signup.dart';
+import 'singup.dart';
 
 class Login extends StatefulWidget {
   const Login({
@@ -148,7 +148,7 @@ class _LoginState extends State<Login> {
                             context,
                             MaterialPageRoute(
                               builder: (context) {
-                                return Container();
+                                return const Signup();
                               },
                             ),
                           );
