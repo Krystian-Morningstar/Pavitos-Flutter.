@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
-// import 'home.dart';
-import 'singup.dart';
+import './home.dart';
+import './singup.dart';
 
 class Login extends StatefulWidget {
   const Login({
-    Key? key,
+   Key? key,
   }) : super(key: key);
 
   @override
@@ -27,7 +27,7 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     if (_boxLogin.get("loginStatus") ?? false) {
-      return Container();
+      return Home();
     }
 
     return Scaffold(
@@ -128,7 +128,7 @@ class _LoginState extends State<Login> {
                           context,
                           MaterialPageRoute(
                             builder: (context) {
-                              return Container();
+                              return Home();
                             },
                           ),
                         );

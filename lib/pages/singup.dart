@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 class Signup extends StatefulWidget {
-  const Signup({super.key});
+   const Signup({Key? key}) : super(key: key);
 
   @override
   State<Signup> createState() => _SignupState();
